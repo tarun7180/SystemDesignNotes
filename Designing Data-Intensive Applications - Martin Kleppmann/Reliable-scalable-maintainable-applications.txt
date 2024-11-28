@@ -1,0 +1,6 @@
+- Data-intensive applications are pushing the boundaries of what is possible by making use of these technological developments. 
+- We call an application data-intensive if data is its primary challenge—the quantity of data, the complexity of data, or the speed at which it is changing—as opposed to compute-intensive, where CPU cycles are the bottleneck.
+- Many applications today are data-intensive, as opposed to compute-intensive.
+- Raw CPU power is rarely a limiting factor for these applications—bigger problems are usually the amount of data, the complexity of data, and the speed at which it is
+changing.
+- When building an application, we still need to figure out which tools and which approaches are the most appropriate for the task at hand. And it can be hard to combine tools when you need to do something that a single tool cannot do alone.
