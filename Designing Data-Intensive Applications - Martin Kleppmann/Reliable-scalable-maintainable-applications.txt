@@ -79,3 +79,34 @@ real data, without affecting real users.
 1) Operability: Make it easy for operations teams to keep the system running smoothly.
 2) Simplicity: Make it easy for new engineers to understand the system, by removing as much complexity as possible from the system. (Note this is not the same as simplicity of the user interface.)
 3) Evolvability: Make it easy for engineers to make changes to the system in the future, adapting it for unanticipated use cases as requirements change. Also known as extensibility, modifiability, or plasticity.
+-It has been suggested that “good operations can often work around the limitations of bad (or incomplete) software, but good software cannot run reliably with bad operations” . While some aspects of operations can and should be automated, it is still up to humans to set up that automation in the first place and to make sure it’s working correctly.
+- Operations teams are vital to keeping a software system running smoothly
+-  A good operations team typically is responsible for the following, and more:
+• Monitoring the health of the system and quickly restoring service if it goes into a bad state
+• Tracking down the cause of problems, such as system failures or degraded performance
+• Keeping software and platforms up to date, including security patches
+• Keeping tabs on how different systems affect each other, so that a problematic change can be avoided before it causes damage Anticipating future problems and solving them before they occur (e.g., capacity planning)
+• Establishing good practices and tools for deployment, configuration management, and more
+• Performing complex maintenance tasks, such as moving an application from one platform to another
+• Maintaining the security of the system as configuration changes are made
+• Defining processes that make operations predictable and help keep the production environment stable
+• Preserving the organization’s knowledge about the system, even as individual people come and go
+- Good operability means making routine tasks easy, allowing the operations team to focus their efforts on high-value activities.
+- Data systems can do various things to make routine tasks easy, including:
+• Providing visibility into the runtime behavior and internals of the system, with good monitoring
+• Providing good support for automation and integration with standard tools
+• Avoiding dependency on individual machines (allowing machines to be taken down for maintenance while the system as a whole continues running uninterrupted)
+• Providing good documentation and an easy-to-understand operational model (“If I do X, Y will happen”)
+• Providing good default behavior, but also giving administrators the freedom to override defaults when needed
+• Self-healing where appropriate, but also giving administrators manual control over the system state when needed
+• Exhibiting predictable behavior, minimizing surprises
+- A software project mired in complexity is sometimes described as a big ball of mud 
+- There are various possible symptoms of complexity: explosion of the state space, tight coupling of modules, tangled dependencies, inconsistent naming and terminology, hacks aimed at solving performance problems, special-casing to work around issues elsewhere, and many more.
+- When complexity makes maintenance hard, budgets and schedules are often overrun. In complex software, there is also a greater risk of introducing bugs when making a change: when the system is harder for developers to understand and reason about, hidden assumptions, unintended consequences, and unexpected interactions are more easily overlooked. Conversely, reducing complexity greatly improves the
+maintainability of software, and thus simplicity should be a key goal for the systems we build.
+- Making a system simpler does not necessarily mean reducing its functionality; it can also mean removing accidental complexity. Moseley and Marks define complexity as accidental if it is not inherent in the problem that the software solves (as seen by the users) but arises only from the implementation.
+- One of the best tools we have for removing accidental complexity is abstraction. A good abstraction can hide a great deal of implementation detail behind a clean, simple-to-understand façade. A good abstraction can also be used for a wide range of
+different applications. Not only is this reuse more efficient than reimplementing a similar thing multiple times, but it also leads to higher-quality software, as quality improvements in the abstracted component benefit all applications that use it.
+- In terms of organizational processes, Agile working patterns provide a framework for adapting to change. 
+- The Agile community has also developed technical tools and patterns that are helpful when developing software in a frequently changing environment, such as test-driven development (TDD) and refactoring.
+- The ease with which you can modify a data system, and adapt it to changing requirements, is closely linked to its simplicity and its abstractions: simple and easy-tounderstand systems are usually easier to modify than complex ones. But since this is such an important idea, we will use a different word to refer to agility on a data system level: evolvability
