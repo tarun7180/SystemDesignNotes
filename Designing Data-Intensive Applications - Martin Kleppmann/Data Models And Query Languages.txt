@@ -1,1 +1,8 @@
-
+- Data models are perhaps the most important part of developing software, because they have such a profound effect: not only on how the software is written, but also on how we think about the problem that we are solving.
+- Most applications are built by layering one data model on top of another. For each layer, the key question is: how is it represented in terms of the next-lower layer
+-There are several driving forces behind the adoption of NoSQL databases, including:
+• A need for greater scalability than relational databases can easily achieve, including very large datasets or very high write throughput
+• A widespread preference for free and open source software over commercial database products
+• Specialized query operations that are not well supported by the relational model
+• Frustration with the restrictiveness of relational schemas, and a desire for a more dynamic and expressive data model 
+- Most application development today is done in object-oriented programming languages, which leads to a common criticism of the SQL data model: if data is stored in relational tables, an awkward translation layer is required between the objects in the application code and the database model of tables, rows, and columns. The disconnect between the models is sometimes called an impedance mismatch
